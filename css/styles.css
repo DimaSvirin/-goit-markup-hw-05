@@ -163,6 +163,10 @@ address {
         letter-spacing: 0.02em;
         color: var(--main-text-color);
 }
+.header-contacts-item .link {
+    transition-property: color fill;
+    transition: var(--transition-d-tf);
+}
 .header-contacts .link:hover ,
 .header-contacts .link:focus {
     color: var(--active-color);
@@ -276,7 +280,27 @@ address {
     gap: 30px;
 }
 
-.works-item {}
+.works-item {
+    position: relative;
+}
+.work-text {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    background: rgba(47, 48, 58, 0.8);
+    color: #FFFFFF;
+}
 
 /* OUR TEAM */
 
@@ -348,9 +372,14 @@ address {
     align-items: center;
     justify-content: center;
     color: var(--icon-main-color);
+    
+    transition-property: color;
+    transition: var(--transition-d-tf);
 }
 
 .team-soc-icon {
+    transition-property: fill;
+    transition: var(--transition-d-tf);
     fill: currentColor;
 }
 
@@ -398,10 +427,15 @@ address {
         align-items: center;
         justify-content: center;
         color: var(--icon-main-color);
+
+    transition-property: border-color;
+    transition: var(--transition-d-tf);
 }
 
 .client-logo {
     fill: currentColor;
+    transition-property: fill;
+    transition: var(--transition-d-tf);
 }
 
 .clients-link:hover,
@@ -493,10 +527,14 @@ address {
     align-items: center;
     justify-content: center;
     color: var(--color-white);
+    transition-property: background-color;
+    transition: var(--transition-d-tf);
 }
 
 .footer-soc-icon {
     fill: currentColor;
+    transition-property: fill;
+    transition: var(--transition-d-tf);
 }
 .footer-soc-link:hover,
 .footer-soc-link:focus {
@@ -538,11 +576,14 @@ address {
         border-color: transparent;
 
         padding: 6px 25px;
+
+        transition-property: color background-color box-shadow;
+        transition: var(--transition-d-tf);
 }
 .filters-btn:hover,
 .filters-btn:focus {
 color: var(--color-white);
-background: var(--active-color);
+background-color: var(--active-color);
 box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
@@ -565,6 +606,8 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
 .card-link{
     display: block;
     text-decoration: none;
+    transition-property: box-shadow;
+    transition: var(--transition-d-tf);
 }
 .card-link:hover,
 .card-link:focus {

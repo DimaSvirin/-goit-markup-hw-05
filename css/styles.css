@@ -1,9 +1,3 @@
-/* color text primary #757575 */
-/* color text secondary #212121 */
-/* white text #FFFFFF */
-/* color active #2196F3 */
-
-
 :root {
     --main-text-color: #757575;
     --title-color: #212121;
@@ -47,15 +41,15 @@ address {
 }
 .hidden {
     position: absolute;
-        width: 1px;
-        height: 1px;
-        margin: -1px;
-        border: 0;
-        padding: 0;
-        white-space: nowrap;
-        clip-path: inset(100%);
-        clip: rect(0 0 0 0);
-        overflow: hidden;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 .container {
     width: 1200px;
@@ -100,10 +94,10 @@ address {
     margin-left: 93px;
 
     font-weight: 500;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
-        color: var(--title-color);
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--title-color);
 }
 
 .header-nav-item:not(:last-child) {
@@ -154,14 +148,15 @@ address {
 .header-contacts-item .link {
     display: flex;
     align-items: center;
-        padding-top: 32px;
-        padding-bottom: 32px;
+    padding-top: 32px;
+    padding-bottom: 32px;
     gap: 10px;
+
     font-weight: 500;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
-        color: var(--main-text-color);
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--main-text-color);
 }
 .header-contacts-item .link {
     transition-property: color fill;
@@ -249,12 +244,12 @@ address {
 .features-icon {}
 
 .features-subtitle {
-        font-size: 14px;
-        line-height: 1.14;
-        text-transform: uppercase;
-        color: var(--title-color);
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--title-color);
 
-        margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .features-text {
@@ -269,10 +264,10 @@ address {
 
 .works-title {
     font-size: 36px;
-        line-height: 1.17;
-        text-align: center;
-        color: var(--title-color);
-        margin-bottom: 50px;
+    line-height: 1.17;
+    text-align: center;
+    color: var(--title-color);
+    margin-bottom: 50px;
 }
 
 .works-list {
@@ -310,11 +305,11 @@ address {
 
 .team-title {
     font-size: 36px;
-        line-height: 1.17;
-        text-align: center;
-        color: var(--title-color);
+    line-height: 1.17;
+    text-align: center;
+    color: var(--title-color);
 
-        margin-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .team-list {
@@ -325,29 +320,29 @@ address {
 .team-item {
     display: inline-block;
     background: var(--color-white);
-        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-        border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 /* .team-description {
     padding: 30px auto;
 } */
 .team-subtitle {
     font-weight: 500;
-        font-size: 16px;
-        line-height: 1.19;
-        text-align: center;
-        color: var(--title-color);
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    color: var(--title-color);
 
-        margin-top: 30px;
-        margin-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 .team-text {
     font-size: 16px;
-        line-height: 1.19;
-        text-align: center;
-        color: var(--main-text-color);
-        margin-bottom: 16px;
+    line-height: 1.19;
+    text-align: center;
+    color: var(--main-text-color);
+    margin-bottom: 16px;
 }
 .team-soc-list {
     display: flex;
@@ -360,7 +355,6 @@ address {
     height: 44px;
     
     margin-bottom: 30px;
-
 }
 
 .team-soc-link {
@@ -412,7 +406,6 @@ address {
     display: flex;
     justify-content: center;
     gap: 30px;
-    
 }
 
 .clients-item {
@@ -420,13 +413,13 @@ address {
 }
 .clients-link {
     width: 170px;
-        height: 92px;
-        display: flex;
-        border: 1px solid #AFB1B8;
-        border-radius: 4px;
-        align-items: center;
-        justify-content: center;
-        color: var(--icon-main-color);
+    height: 92px;
+    display: flex;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    color: var(--icon-main-color);
 
     transition-property: border-color;
     transition: var(--transition-d-tf);
@@ -464,6 +457,7 @@ address {
 .footer-address {}
 
 .address-list {}
+
 .address-item:first-child {
     margin-top: 20px;
 }
@@ -553,13 +547,11 @@ address {
 
 /* FILTERS */
 
-
 .filters-list {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
 }
-
 
 .filters-item {}
 .filters-item:not(:last-child) {
@@ -567,24 +559,24 @@ address {
 }
 .filters-btn {
     font-weight: 500;
-        font-size: 16px;
-        line-height: 1.63;
-        text-align: center;
-        color: var(--title-color);
-        background: var(--background-color);
-        border-radius: 4px;
-        border-color: transparent;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: center;
+    color: var(--title-color);
+    background: var(--background-color);
+    border-radius: 4px;
+    border-color: transparent;
 
-        padding: 6px 25px;
+    padding: 6px 25px;
 
-        transition-property: color background-color box-shadow;
-        transition: var(--transition-d-tf);
+    transition-property: color background-color box-shadow;
+    transition: var(--transition-d-tf);
 }
 .filters-btn:hover,
 .filters-btn:focus {
-color: var(--color-white);
-background-color: var(--active-color);
-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    color: var(--color-white);
+    background-color: var(--active-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* CARDS */
@@ -594,7 +586,6 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
     flex-wrap: wrap;
     margin-left: -30px;
     margin-top: -30px;
-    
 }
 
 .card-item {
@@ -627,7 +618,6 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
     background-color: rgba(33, 150, 243, 0.9);
 }
 
-
 .card-link{
     display: block;
     text-decoration: none;
@@ -645,18 +635,17 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
 
 .example-title {
     font-size: 18px;
-        line-height: 2.00;
-        letter-spacing: 0.06em;
-        color: var(--title-color);
+    line-height: 2.00;
+    letter-spacing: 0.06em;
+    color: var(--title-color);
 }
 
 .example-text {
     font-size: 16px;
-        line-height: 1.88;
-        color: var(--main-text-color);
+    line-height: 1.88;
+    color: var(--main-text-color);
 }
 .card-name {
-    
     padding: 20px 24px;
     border-left: 1px solid var(--border-card);
     border-right: 1px solid var(--border-card);

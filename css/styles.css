@@ -110,8 +110,7 @@ address {
     color: var(--title-color);
 }
 .header-nav .link {
-    transition-property: color;
-    transition: var(--transition-d-tf);
+    transition: color var(--transition-d-tf);
 }
 .header-nav .link:hover,
 .header-nav .link:focus {
@@ -131,6 +130,7 @@ address {
     bottom: 0;
     background-color: var(--active-color);
     border-radius: 2px;
+    transform: scaleX(1.2);
 
 }
 .header-contacts {
@@ -159,13 +159,11 @@ address {
     color: var(--main-text-color);
 }
 .header-contacts-item .link {
-    transition-property: color fill;
-    transition: var(--transition-d-tf);
+    transition: color var(--transition-d-tf);
 }
 .header-contacts .link:hover ,
 .header-contacts .link:focus {
     color: var(--active-color);
-    fill: var(--active-color);
 }
 
 /* MAIN */
@@ -211,8 +209,14 @@ address {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border-color: transparent;
+
+    transition: background-color var(--transition-d-tf);
 }
 
+.hero-btn:hover,
+.hero-btn:focus {
+    background-color: #188CE8;
+}
 /* features */
 .features {
     padding-bottom: 0;
@@ -365,13 +369,11 @@ address {
     justify-content: center;
     color: var(--icon-main-color);
     
-    transition-property: color;
-    transition: var(--transition-d-tf);
+    transition: background-color var(--transition-d-tf);
 }
 
 .team-soc-icon {
-    transition-property: fill;
-    transition: var(--transition-d-tf);
+    transition: fill var(--transition-d-tf);
     fill: currentColor;
 }
 
@@ -419,14 +421,12 @@ address {
     justify-content: center;
     color: var(--icon-main-color);
 
-    transition-property: border-color;
-    transition: var(--transition-d-tf);
+    transition: border-color var(--transition-d-tf);
 }
 
 .client-logo {
     fill: currentColor;
-    transition-property: fill;
-    transition: var(--transition-d-tf);
+    transition: fill var(--transition-d-tf);
 }
 
 .clients-link:hover,
@@ -469,9 +469,12 @@ address {
     font-size: 14px;
     line-height: 1.71;
     color: var(--color-white);
+
+    transition: color var(--transition-d-tf);
 }
 .address-link {
     color: rgba(255, 255, 255, 0.6);
+    transition: color var(--transition-d-tf);
 }
 
 .address-link-map:hover,
@@ -519,24 +522,17 @@ address {
     align-items: center;
     justify-content: center;
     color: var(--color-white);
-    transition-property: background-color;
-    transition: var(--transition-d-tf);
+    transition: background-color var(--transition-d-tf);
 }
 
 .footer-soc-icon {
     fill: currentColor;
-    transition-property: fill;
-    transition: var(--transition-d-tf);
 }
 .footer-soc-link:hover,
 .footer-soc-link:focus {
     background-color: var(--active-color);
 }
 
-.footer-soc-link:hover .footer-soc-icon,
-.footer-soc-link:focus .footer-soc-icon {
-    fill: var(--color-white);
-}
 
 /* BACKDROP */
 
@@ -580,8 +576,13 @@ address {
     position: absolute;
     right: 8px;
     top: 8px;
-}
 
+    transition: fill var(--transition-d-tf);
+}
+.modal-btn-close:hover,
+.modal-btn-close:focus {
+    fill: var(--active-color);
+}
 .modal-btn-icon {}
 
 .is-hidden {
@@ -619,8 +620,9 @@ address {
 
     padding: 6px 25px;
 
-    transition-property: color background-color box-shadow;
-    transition: var(--transition-d-tf);
+    transition: color var(--transition-d-tf),
+    background-color var(--transition-d-tf),
+    box-shadow var(--transition-d-tf);
 }
 .filters-btn:hover,
 .filters-btn:focus {
@@ -671,8 +673,7 @@ address {
 .card-link{
     display: block;
     text-decoration: none;
-    transition-property: box-shadow;
-    transition: var(--transition-d-tf);
+    transition: box-shadow var(--transition-d-tf);
 }
 .card-link:hover,
 .card-link:focus {
